@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DC232353F0DEEDE4B8FFA54 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 229C83C8E77AB1B357CDF8B1 /* libPods.a */; };
 		DB18D93D1BA2506300B7A231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18D93C1BA2506300B7A231 /* AppDelegate.swift */; };
-		DB18D93F1BA2506300B7A231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18D93E1BA2506300B7A231 /* ViewController.swift */; };
 		DB18D9421BA2506300B7A231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18D9401BA2506300B7A231 /* Main.storyboard */; };
 		DB18D9441BA2506300B7A231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB18D9431BA2506300B7A231 /* Assets.xcassets */; };
 		DB18D9471BA2506300B7A231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18D9451BA2506300B7A231 /* LaunchScreen.storyboard */; };
+		DB18D9541BA250A300B7A231 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB18D9531BA250A300B7A231 /* ParallaxHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		DB18D9571BA252F300B7A231 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18D9561BA252F300B7A231 /* TestTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DB55E7C61BA6DC73000FA648 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB55E7C51BA6DC73000FA648 /* podfile */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229C83C8E77AB1B357CDF8B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55140D6F3CF2633E9DEEF104 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DB18D9391BA2506300B7A231 /* ParallaxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB18D93C1BA2506300B7A231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB18D93E1BA2506300B7A231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB18D9411BA2506300B7A231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB18D9431BA2506300B7A231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB18D9461BA2506300B7A231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB18D9481BA2506300B7A231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB18D9521BA250A300B7A231 /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
+		DB18D9531BA250A300B7A231 /* ParallaxHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderView.m; sourceTree = "<group>"; };
+		DB18D9551BA250C300B7A231 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DB18D9561BA252F300B7A231 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		DB55E7C51BA6DC73000FA648 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		F5C71FAFCD1E1EF2CD49027F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC232353F0DEEDE4B8FFA54 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33BE57DD85F8E9CA393D04CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55140D6F3CF2633E9DEEF104 /* Pods.debug.xcconfig */,
+				F5C71FAFCD1E1EF2CD49027F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		585AA2943310AEDC00347B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				229C83C8E77AB1B357CDF8B1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB18D9301BA2506300B7A231 = {
 			isa = PBXGroup;
 			children = (
+				DB55E7C51BA6DC73000FA648 /* podfile */,
+				DB18D9551BA250C300B7A231 /* Bridging-Header.h */,
 				DB18D93B1BA2506300B7A231 /* ParallaxDemo */,
 				DB18D93A1BA2506300B7A231 /* Products */,
+				33BE57DD85F8E9CA393D04CA /* Pods */,
+				585AA2943310AEDC00347B24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +86,10 @@
 		DB18D93B1BA2506300B7A231 /* ParallaxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DB18D9521BA250A300B7A231 /* ParallaxHeaderView.h */,
+				DB18D9531BA250A300B7A231 /* ParallaxHeaderView.m */,
 				DB18D93C1BA2506300B7A231 /* AppDelegate.swift */,
-				DB18D93E1BA2506300B7A231 /* ViewController.swift */,
+				DB18D9561BA252F300B7A231 /* TestTableViewController.swift */,
 				DB18D9401BA2506300B7A231 /* Main.storyboard */,
 				DB18D9431BA2506300B7A231 /* Assets.xcassets */,
 				DB18D9451BA2506300B7A231 /* LaunchScreen.storyboard */,
@@ -71,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB18D94B1BA2506300B7A231 /* Build configuration list for PBXNativeTarget "ParallaxDemo" */;
 			buildPhases = (
+				5B5DF0F2F7009526569100B9 /* Check Pods Manifest.lock */,
 				DB18D9351BA2506300B7A231 /* Sources */,
 				DB18D9361BA2506300B7A231 /* Frameworks */,
 				DB18D9371BA2506300B7A231 /* Resources */,
+				EA9DDD5FD4893CC0391A6671 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,19 +160,54 @@
 			files = (
 				DB18D9471BA2506300B7A231 /* LaunchScreen.storyboard in Resources */,
 				DB18D9441BA2506300B7A231 /* Assets.xcassets in Resources */,
+				DB55E7C61BA6DC73000FA648 /* podfile in Resources */,
 				DB18D9421BA2506300B7A231 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B5DF0F2F7009526569100B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA9DDD5FD4893CC0391A6671 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB18D9351BA2506300B7A231 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB18D93F1BA2506300B7A231 /* ViewController.swift in Sources */,
+				DB18D9541BA250A300B7A231 /* ParallaxHeaderView.m in Sources */,
 				DB18D93D1BA2506300B7A231 /* AppDelegate.swift in Sources */,
+				DB18D9571BA252F300B7A231 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,23 +316,27 @@
 		};
 		DB18D94C1BA2506300B7A231 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55140D6F3CF2633E9DEEF104 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParallaxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Azure.ParallaxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		DB18D94D1BA2506300B7A231 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C71FAFCD1E1EF2CD49027F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParallaxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Azure.ParallaxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +359,7 @@
 				DB18D94D1BA2506300B7A231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
