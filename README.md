@@ -1,0 +1,2 @@
+# NirParallaxHeaderView
+一种HeaderView动画效果
