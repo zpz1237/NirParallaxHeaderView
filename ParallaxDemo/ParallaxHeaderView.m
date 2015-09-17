@@ -41,8 +41,8 @@
         self.clipsToBounds = YES;
     }
     else if (offset.y < -114) {
-        //只是留个位置供接触到父ViewController
-        [self.delegate lockDirection];
+        //只是留个位置供接触到父ViewController的方法
+        //[self.delegate lockDirection];
     }
     else
     {

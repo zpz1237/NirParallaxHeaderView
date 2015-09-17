@@ -40,9 +40,8 @@ class TestTableViewController: UITableViewController, SDCycleScrollViewDelegate,
     }
     
     func lockDirection() {
-//        let currentOffSetY = self.tableView.contentOffset.y
 //        self.tableView.scrollEnabled = false
-//        self.tableView.contentOffset.y = currentOffSetY
+        self.tableView.contentOffset.y = -114
     }
     
     func cycleScrollView(cycleScrollView: SDCycleScrollView!, didSelectItemAtIndex index: Int) {
