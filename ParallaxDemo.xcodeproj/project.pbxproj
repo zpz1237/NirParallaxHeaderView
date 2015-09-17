@@ -15,6 +15,8 @@
 		DB18D9541BA250A300B7A231 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB18D9531BA250A300B7A231 /* ParallaxHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		DB18D9571BA252F300B7A231 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18D9561BA252F300B7A231 /* TestTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB55E7C61BA6DC73000FA648 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB55E7C51BA6DC73000FA648 /* podfile */; settings = {ASSET_TAGS = (); }; };
+		DBC15EF21BAAAB90005131AD /* myUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC15EF11BAAAB90005131AD /* myUILabel.m */; settings = {ASSET_TAGS = (); }; };
+		DBC15EF51BAAD282005131AD /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC15EF41BAAD282005131AD /* UINavigationBar+Awesome.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		DB18D9551BA250C300B7A231 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DB18D9561BA252F300B7A231 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 		DB55E7C51BA6DC73000FA648 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		DBC15EF01BAAAB90005131AD /* myUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myUILabel.h; sourceTree = "<group>"; };
+		DBC15EF11BAAAB90005131AD /* myUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myUILabel.m; sourceTree = "<group>"; };
+		DBC15EF31BAAD282005131AD /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		DBC15EF41BAAD282005131AD /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		F5C71FAFCD1E1EF2CD49027F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,10 @@
 		DB18D93B1BA2506300B7A231 /* ParallaxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DBC15EF31BAAD282005131AD /* UINavigationBar+Awesome.h */,
+				DBC15EF41BAAD282005131AD /* UINavigationBar+Awesome.m */,
+				DBC15EF01BAAAB90005131AD /* myUILabel.h */,
+				DBC15EF11BAAAB90005131AD /* myUILabel.m */,
 				DB18D9521BA250A300B7A231 /* ParallaxHeaderView.h */,
 				DB18D9531BA250A300B7A231 /* ParallaxHeaderView.m */,
 				DB18D93C1BA2506300B7A231 /* AppDelegate.swift */,
@@ -207,7 +217,9 @@
 			files = (
 				DB18D9541BA250A300B7A231 /* ParallaxHeaderView.m in Sources */,
 				DB18D93D1BA2506300B7A231 /* AppDelegate.swift in Sources */,
+				DBC15EF21BAAAB90005131AD /* myUILabel.m in Sources */,
 				DB18D9571BA252F300B7A231 /* TestTableViewController.swift in Sources */,
+				DBC15EF51BAAD282005131AD /* UINavigationBar+Awesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

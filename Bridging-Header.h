@@ -10,6 +10,7 @@
 #define Bridging_Header_h
 
 #import "ParallaxHeaderView.h"
+#import "UINavigationBar+Awesome.h"
 #import <SDCycleScrollView/SDCycleScrollView.h>
 
 #endif /* Bridging_Header_h */

@@ -8,6 +8,7 @@
 //
 
 #import "ParallaxHeaderView.h"
+#import "myUILabel.h"
 
 @interface ParallaxHeaderView ()
 @property (weak, nonatomic) IBOutlet UIScrollView *imageScrollView;
@@ -17,6 +18,7 @@
 //#define kDefaultHeaderFrame CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)
 
 //static CGFloat kParallaxDeltaFactor = 0.5f;
+static CGFloat kLabelPaddingDist = 8.0f;
 
 @implementation ParallaxHeaderView
 
@@ -34,15 +36,15 @@
 {
     CGRect frame = self.imageScrollView.frame;
     
-    if (offset.y > 0)
+    if (NO)
     {
         frame.origin.y = MAX(offset.y *0.5, 0);
         self.imageScrollView.frame = frame;
         self.clipsToBounds = YES;
     }
-    else if (offset.y < -114) {
+    else if (offset.y < -154) {
         //只是留个位置供接触到父ViewController的方法
-        //[self.delegate lockDirection];
+        [self.delegate lockDirection];
     }
     else
     {
@@ -52,6 +54,11 @@
         rect.origin.y -= delta;
         rect.size.height += delta;
         self.imageScrollView.frame = rect;
+        //headerTitleLabel
+        CGRect titleRect = CGRectMake(23, 23, self.imageScrollView.bounds.size.width - 46, 104);
+        titleRect.origin.y += delta;
+        self.headerTitleLabel.frame = titleRect;
+        
         self.clipsToBounds = NO;
     }
 }
@@ -69,6 +76,26 @@
     
     //将内容层View添加到scrollView上
     [self.imageScrollView addSubview:subView];
+    
+    CGRect labelRect = self.imageScrollView.bounds;
+    labelRect.origin.x = labelRect.origin.y = kLabelPaddingDist;
+    labelRect.size.width = labelRect.size.width - 2 * kLabelPaddingDist;
+    labelRect.size.height = labelRect.size.height - 2 * kLabelPaddingDist;
+    myUILabel *headerLabel = [[myUILabel alloc] initWithFrame:labelRect];
+    headerLabel.textAlignment = NSTextAlignmentLeft;
+    headerLabel.numberOfLines = 0;
+    headerLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    headerLabel.verticalAlignment = VerticalAlignmentBottom;
+    headerLabel.shadowColor = [UIColor blackColor];
+    headerLabel.shadowOffset = CGSizeMake(0, 1);
+    
+//    headerLabel.autoresizingMask = imageView.autoresizingMask;
+    headerLabel.textColor = [UIColor whiteColor];
+    headerLabel.font = [UIFont fontWithName:@"STHeitiSC-Medium" size:21.0];
+    self.headerTitleLabel = headerLabel;
+    [self.imageScrollView addSubview:self.headerTitleLabel];
+    
+    
     [self addSubview:self.imageScrollView];
 }
 

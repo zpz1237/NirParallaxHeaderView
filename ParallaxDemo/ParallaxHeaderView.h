@@ -19,6 +19,7 @@
 
 @interface ParallaxHeaderView : UIView
 
+@property (nonatomic, weak) UILabel *headerTitleLabel;
 @property (nonatomic, weak) id<ParallaxHeaderViewDelegate> delegate;
 
 + (id)parallaxHeaderViewWithSubView:(UIView *)subView forSize:(CGSize)headerSize;
