@@ -3,4 +3,4 @@
 
 ![](https://github.com/zpz1237/NirParallaxHeaderView/blob/master/test.gif)
 
-欢迎发邮件来讨论关于tableHeaderView各种动画效果的实现方法
+在另一个分支里有另一种效果的tableHeaderView动画效果
